@@ -128,7 +128,7 @@ const workerConfig: WorkerConfig = {
       name: '短链接服务',
       method: 'HEAD',
       target: 'https://go.xhhb.dpdns.org/',
-      statusPageLink: 'https://go.xhhb.dpdns.org//',
+      statusPageLink: 'https://go.xhhb.dpdns.org/',
       hideLatencyChart: false,
       expectedCodes: [200],
       timeout: 10000,
