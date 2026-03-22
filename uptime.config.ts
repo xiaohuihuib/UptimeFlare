@@ -184,7 +184,7 @@ const workerConfig: WorkerConfig = {
       // [Required] payload to be sent
       // $MSG will be replaced with the human-readable notification message
       payload: {
-        "from": "系统状态更新 <noreply@xiaohuihuib.dpdns.org>",
+        "from": "系统状态更新 <noreply@xhhb.dpdns.org>",
         "to": ["xiaohuhuib@qq.com"],
         "subject": "UptimeFlare 状态更新",
         "text": "$MSG"
