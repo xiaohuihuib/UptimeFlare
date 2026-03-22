@@ -103,6 +103,44 @@ const workerConfig: WorkerConfig = {
       expectedCodes: [200],
       timeout: 10000,
     },
+    {
+      id: 'qa',
+      name: '虚境问答',
+      method: 'HEAD',
+      target: 'https://qa.xhhb.dpdns.org/',
+      statusPageLink: 'https://qa.xhhb.dpdns.org/',
+      hideLatencyChart: false,
+      expectedCodes: [200],
+      timeout: 10000,
+    },
+    {
+      id: 'daily',
+      name: 'bingdaily（bing每日一图api）',
+      method: 'HEAD',
+      target: 'https://daily.xhhb.dpdns.org/',
+      statusPageLink: 'https://daily.xhhb.dpdns.org/',
+      hideLatencyChart: false,
+      expectedCodes: [200],
+      timeout: 10000,
+    },
+    {
+      id: 'subscription',
+      name: '订阅管理系统',
+      method: 'HEAD',
+      target: 'https://subscription-manager.xhhb.dpdns.org/',
+      hideLatencyChart: false,
+      expectedCodes: [200],
+      timeout: 10000,
+    },
+    {
+      id: 'bbs',
+      name: '小辉辉b的论坛（内部测试中）',
+      method: 'HEAD',
+      target: 'https://bbs.xiaohuihuib.dpdns.org/',
+      hideLatencyChart: false,
+      expectedCodes: [200],
+      timeout: 10000,
+    },
   ],
   notification: {
     // [Optional] Notification webhook settings, if not specified, no notification will be sent
@@ -242,7 +280,7 @@ const maintenances: MaintenanceConfig[] = [
     start: '2025-03-22T10:00:00+08:00',
     // [Optional] end time of the maintenance, in UNIX timestamp or ISO 8601 format
     // if not specified, the maintenance will be considered as on-going
-    end: '2025-03-23T13:00:00+08:00',
+    end: '2025-03-22T12:00:00+08:00',
     // [Optional] color of the maintenance alert at status page, default to "yellow"
     color: 'yellow',
   },
