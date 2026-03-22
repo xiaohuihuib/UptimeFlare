@@ -134,6 +134,16 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
+      id: 'uptimeflare',
+      name: 'UptimeFlare',
+      method: 'HEAD',
+      target: 'https://up.xhhb.dpdns.org/',
+      statusPageLink: 'https://up.xhhb.dpdns.org/',
+      hideLatencyChart: false,
+      expectedCodes: [200],
+      timeout: 10000,
+    },
+    {
       id: 'subscription',
       name: '订阅管理系统',
       method: 'HEAD',
