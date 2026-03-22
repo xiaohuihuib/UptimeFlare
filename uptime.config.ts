@@ -246,6 +246,7 @@ const maintenances: MaintenanceConfig[] = [
     // [Optional] color of the maintenance alert at status page, default to "yellow"
     color: 'yellow',
   },
+]
 
 // Don't edit this line
 export { maintenances, pageConfig, workerConfig }
