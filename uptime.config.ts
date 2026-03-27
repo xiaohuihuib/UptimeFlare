@@ -145,7 +145,7 @@ const workerConfig: WorkerConfig = {
     },
         {
       id: 'bbs',
-      name: '小辉辉b的论坛（公开测试中）',
+      name: '小辉辉b的论坛（维护中）',
       method: 'HEAD',
       target: 'https://bbs.xiaohuihuib.dpdns.org/',
       statusPageLink: 'https://bbs.xiaohuihuib.dpdns.org/',
@@ -304,6 +304,21 @@ const maintenances: MaintenanceConfig[] = [
     // [Optional] end time of the maintenance, in UNIX timestamp or ISO 8601 format
     // if not specified, the maintenance will be considered as on-going
     end: '2025-03-22T12:00:00+08:00',
+    // [Optional] color of the maintenance alert at status page, default to "yellow"
+    color: 'yellow',
+  },
+  {
+    // [Optional] Monitor IDs to be affected by this maintenance
+    monitors: ['bbs'],
+    // [Optional] default to "Scheduled Maintenance" if not specified
+    title: '小辉辉b的论坛维护',
+    // Description of the maintenance, will be shown at status page
+    body: '更换架构为PHPBB，需要停机维护',
+    // Start time of the maintenance, in UNIX timestamp or ISO 8601 format
+    start: '2025-03-27T20:00:00+08:00',
+    // [Optional] end time of the maintenance, in UNIX timestamp or ISO 8601 format
+    // if not specified, the maintenance will be considered as on-going
+    end: '2025-03-29T22:00:00+08:00',
     // [Optional] color of the maintenance alert at status page, default to "yellow"
     color: 'yellow',
   },
