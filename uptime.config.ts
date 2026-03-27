@@ -125,9 +125,10 @@ const workerConfig: WorkerConfig = {
     },
     {
       id: 'daily',
-      name: 'bingdaily（bing每日一图api）',
+      name: 'bingdaily',
       method: 'HEAD',
       target: 'https://daily.xhhb.dpdns.org/',
+      tooltip: 'bing每日一图api',
       statusPageLink: 'https://daily.xhhb.dpdns.org/',
       hideLatencyChart: false,
       expectedCodes: [200],
