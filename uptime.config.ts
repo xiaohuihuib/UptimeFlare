@@ -155,6 +155,16 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
+      id: 'cloudpaste',
+      name: 'CloudPaste',
+      method: 'HEAD',
+      target: 'https://cloudpaste.xhhb.dpdns.org/',
+      statusPageLink: 'https://cloudpaste.xhhb.dpdns.org/',
+      hideLatencyChart: false,
+      expectedCodes: [200],
+      timeout: 10000,
+    },
+    {
       id: 'subscription',
       name: '订阅管理系统',
       method: 'HEAD',
