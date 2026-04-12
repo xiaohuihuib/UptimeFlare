@@ -83,16 +83,6 @@ const workerConfig: WorkerConfig = {
       expectedCodes: [200],
       timeout: 10000,
     },
-        {
-      id: 'qa',
-      name: '虚境问答',
-      method: 'HEAD',
-      target: 'https://qa.xhhb.dpdns.org/',
-      statusPageLink: 'https://qa.xhhb.dpdns.org/',
-      hideLatencyChart: false,
-      expectedCodes: [200],
-      timeout: 10000,
-    },
     {
       id: 'chatcrypt',
       name: '聊天加密',
