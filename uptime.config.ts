@@ -96,11 +96,11 @@ const workerConfig: WorkerConfig = {
       statusPageLink: 'https://chat.xhhb.dpdns.org/',
     },
     {
-      id: 'moepush',
-      name: 'moepush',
+      id: 'oneip',
+      name: 'IP网路工具',
       method: 'HEAD',
-      target: 'https://moepush.xhhb.dpdns.org/',
-      statusPageLink: 'https://moepush.xhhb.dpdns.org/',
+      target: 'https://ip.xhhb.dpdns.org/',
+      statusPageLink: 'https://ip.xhhb.dpdns.org/',
     },
     {
       id: 'daily',
